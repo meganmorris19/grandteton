@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map of Boston</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+    // function initMap() {
+    //   var boston = {lat: 42.3601, lng: -71.0589};
+    //   var map = new google.maps.Map(document.getElementById('map'), {
+    //     zoom: 15,
+    //     center: boston,
+    //     mapTypeId: google.maps.MapTypeId.SATELLITE
+    //   });
+    //
+    // }
+
+    function initMap() {
+
+        var boston = {lat: 42.3355488, lng: -71.1684945};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: boston,
+          mapTypeId: google.maps.MapTypeId.SATELLITE
+        });
+
+  var flightPlanCoordinates = [
+    {lat: 42.2284297, lng: -71.5220031},
+    {lat: 42.3485434, lng: -71.076578},
+  ];
+  var flightPath = new google.maps.Polyline({
+    path: flightPlanCoordinates,
+    geodesic: true,
+    strokeColor: '#BE1E2D',
+    strokeOpacity: .75,
+    strokeWeight: 5
+  });
+
+  flightPath.setMap(map);
+}
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRmf8OMTMAw1_Sh3TiyDpG3woqWJRUlI0&callback=initMap"
+    async defer></script>
+  </body>
+</html>

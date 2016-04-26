@@ -1,0 +1,122 @@
+body {
+  background-color: #D8D1D4;
+}
+
+.container {
+  margin:auto;
+}
+
+h1 {
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2, h3 {
+  color: #4C5472;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.insta-title {
+  color: black;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  text-indent: 1em;
+}
+
+p.intro {
+  font-size: 1.4em;
+}
+
+iframe {
+  border: 10px black;
+  border-radius: 15px;
+}
+
+ul {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+a:link.nav {
+    display: block;
+    width: 150px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #98bf21;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav {
+    color: #FFFFFF;
+}
+
+a:hover.nav, a:active.nav {
+    background-color: #4C5472;
+}
+
+.scroll {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+div.white {
+  background-color: white;
+  border-radius: 15px;
+  padding: .7em;
+}
+
+#footer {
+  background-color: #8C8CAA;
+  height: 46px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer-text {
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+.footer-text:hover {
+  color: #D8D1D4;
+}
+
+.navbar-inverse, .navbar-nav {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.insta {
+  margin: 5px;
+}
